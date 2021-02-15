@@ -1,0 +1,14 @@
+{% extends 'iipinmotion/base.html' %}
+{% block content %}
+
+<h1>{{player.first_name}}{{player.last_name}}</h1>
+ 
+ <h3>History of steps</h3>
+<div>
+<ul>
+	{% for plays in player.playerplays_set.all %}
+		<li> <h4> {{forloop.counter}}.     {{player.stps_date}}    {{plays.num_stps }} </h4></li>
+  	{% endfor %}
+ </ul>
+</div>
+{% endblock %}

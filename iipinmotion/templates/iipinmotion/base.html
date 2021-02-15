@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IIP in Motion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	 
+   <style>
+ 
+	body  {
+      {% load static %}
+	    background-image: url("{% static "IIPPic.png" %}");
+	    background-repeat: no-repeat;
+	    background-color: #cccccc;
+	    background-size:     cover; 
+	}
+  ul{
+      list-style-type: none;
+    }
+	</style>
+
+</head>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="iipinmotion:IndexView">IIP in Motion</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="">Home</a></li>
+      <li><a href="">Predictions</a></li>
+      <li><a href="">Some more</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="iipinmotion:IndexView"><span class="glyphicon glyphicon-user"></span> Log Steps</a></li>
+      <li><a href="registrationForm.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="loginForm.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+	<h1>Welcome to IIP in Motion!</h1>
+</body>
+
+{% block content %}
+
+{% endblock %}
+</html> 
